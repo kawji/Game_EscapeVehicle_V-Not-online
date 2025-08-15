@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Road Safety — Dodge (HTML5)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🚦 Road Safety — Dodge</div>
+    <nav id="nav" class="nav"></nav>
+  </header>
+
+  <main id="view" class="view">
+    <!-- Inline login fallback (always visible without JS) -->
+    <div class="grid" style="max-width:520px;margin:24px auto;">
+      <div class="card">
+        <div class="h1">เข้าสู่ระบบ</div>
+        <div class="sep"></div>
+        <div class="grid">
+          <div id="msg-login" class=""></div>
+          <input id="login-user" class="input" placeholder="ชื่อบัญชี" />
+          <input id="login-pass" class="input" placeholder="รหัสผ่าน" type="password" />
+          <button id="btn-login" class="btn primary">เข้าสู่ระบบ</button>
+        </div>
+        <div class="sep"></div>
+        <div class="help">ยังไม่พบบัญชี? ลงทะเบียนด้านล่าง</div>
+      </div>
+      <div class="card">
+        <div class="h1">สร้างบัญชีใหม่</div>
+        <div class="sep"></div>
+        <div class="grid">
+          <div id="msg-reg" class=""></div>
+          <input id="reg-user" class="input" placeholder="ตั้งชื่อบัญชี" />
+          <input id="reg-pass" class="input" placeholder="ตั้งรหัสผ่าน" type="password" />
+          <button id="btn-reg" class="btn">สมัครสมาชิก</button>
+        </div>
+        <div class="sep"></div>
+        <div class="help">* เก็บข้อมูลภายในเบราว์เซอร์ (หรือหน่วยความจำชั่วคราว หากเบราว์เซอร์ไม่อนุญาต)</div>
+      </div>
+    </div>
+  </main>
+
+  <audio id="sfx-click" src="sfx/click.wav" preload="auto"></audio>
+  <audio id="sfx-win"   src="sfx/win.wav"   preload="auto"></audio>
+  <audio id="sfx-lose"  src="sfx/lose.wav"  preload="auto"></audio>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
